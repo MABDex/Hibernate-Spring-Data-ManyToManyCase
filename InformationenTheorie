@@ -1,0 +1,15 @@
+-------------------------------- Many-to-Many avec classe d'association. -------------------------------------------------
+
+-> Un utilisateur peut avoir plusieurs rôles, et un rôle peut concerner plusieurs utilisateurs
+
+-> L'annotation @JoinTable() n'est pas obligatoire par défaut, car normalement, dans une table de jointure,
+   il faut spécifier comment nommer la table de jointure. Cela est nécessaire, car une relation Many-to-Many se traduit,
+   au niveau de la base de données, par la création d'une table d'association.
+
+->  Fach kandiro chi Id de type String bhal f Class User , haykhsna manuellment n9ado lih Identifiant
+    chouf la class (UserserviceImpl) li f  couche service hatl9a user.setUserid(UUID.randomUUID().toString());
+
+
+
+
+
